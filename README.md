@@ -35,21 +35,16 @@ Ensure you have the following installed before proceeding:
    ```sh
    npm install
    ```
-3. Set up environment variables:
-   - Create a `.env` file in the backend directory and configure your MongoDB connection string:
-     ```sh
-     DATABASE_URL=mongodb://localhost:27017/product_review_db
-     PORT=5000
-     ```
+
 4. Start the backend server:
    ```sh
-   npm run start
+   npm run start :dev
    ```
 
 ### Frontend Setup (React Native Expo)
 1. Navigate to the frontend directory:
    ```sh
-   cd ../MyApp
+   cd MyApp
    ```
 2. Install dependencies:
    ```sh
@@ -57,7 +52,7 @@ Ensure you have the following installed before proceeding:
    ```
 3. Start the Expo development server:
    ```sh
-   expo start
+   npx expo start
    ```
 4. Run the app on a physical device or emulator:
    - Scan the QR code using the Expo Go app (Android/iOS)
@@ -71,7 +66,7 @@ GET /reviews           # Fetch all product reviews
 POST /reviews          # Add a new product review
 PUT /reviews/:id       # Update an existing review
 DELETE /reviews/:id    # Delete a review
-GET /reviews/search?query=  # Search for product reviews
+
 ```
 
 
